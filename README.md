@@ -3,7 +3,7 @@
 
 # Nadpis 1 
 
-**Bold
+**Bold**
 __Bold__
 
 
@@ -18,4 +18,4 @@ _Italics_
 
 ### Nadpis 3
 
-[link]
+[link]: link.link.link
