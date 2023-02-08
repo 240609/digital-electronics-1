@@ -4,10 +4,10 @@
 # Nadpis 1 
 
 
-## *Nadpis 2* 
+## *Nadpis 2, Italics* 
 
 
-### **Nadpis 3** 
+### **Nadpis 3, Bold** 
 
 
 
