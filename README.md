@@ -17,5 +17,4 @@ _Italics_
 * List 3
 
 ### Nadpis 3
-
-[link]: link.link.link
+[link]: https://www.mozilla.org
