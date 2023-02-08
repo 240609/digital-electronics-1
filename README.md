@@ -1,13 +1,13 @@
 # digital-electronics-1
 
 
-# PC exercise 1
+# Nadpis 1 
 
 
-## PC exercise 2  
+## Nadpis 2 
 
 
-### PC exercise 3
+### Nadpis 3 
 
 
 
