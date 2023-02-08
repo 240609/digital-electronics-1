@@ -1,13 +1,13 @@
 # digital-electronics-1
 
 
-# H1 PC exercise 1
+# PC exercise 1
 
 
-## H2 
+## PC exercise 2  
 
 
-### H3
+### PC exercise 3
 
 
 
