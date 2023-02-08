@@ -18,5 +18,7 @@ _Italics_
 
 ### Nadpis 3
 [link]: https://www.mozilla.org
+
 <https://www.mozilla.org>
-[link](https://www.mozilla.org)
+
+[link2](https://www.mozilla.org)
