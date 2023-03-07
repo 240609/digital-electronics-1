@@ -1,4 +1,4 @@
-# Lab 4: Jakub Fojtik
+# Lab 4: Jakub Fojtík
 
 ### LED(7:4) indicators
 
