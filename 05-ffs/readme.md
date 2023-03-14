@@ -14,6 +14,32 @@
 architecture Behavioral of jk_ff_rst is
 
     -- WRITE YOUR CODE HERE
+    signal s_q : std_logic;
+begin
+        p_jk_ff_rst : process (clk)
+        begin 
+         
+            if rising_edge(clk) then
+                if (rst = '1') then
+                    s_q <= '0';
+                    
+                else 
+                    if (j = '0' and k = '0') then
+                        s_q <= s_q;
+                        
+                    elsif (j = '0' and k = '1') then
+                        s_q <= '0';
+                        
+                    elsif (j = '1' and k = '0') then
+                        s_q <= '1';
+                        
+                    elsif (j = '1' and k = '1') then
+                        s_q <= not s_q;
+                    
+                    end if;
+                end if;             
+            end if;
+        end process p_jk_ff_rst;
 
     -- Output ports are permanently connected to local signal
     q     <= sig_q;
