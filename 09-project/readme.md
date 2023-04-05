@@ -1,32 +1,32 @@
-# Recommended README.md file structure
+# Vysílač a přijímač Morseovy abecedy
 
-### Team members
+### Členové týmu
 
-* Member 1 (responsible for ...)
-* Member 2 (responsible for ...)
-* Member 3 (responsible for ...)
+* David Bartoň (responsible for ...)
+* Šimon Bárta (responsible for ...)
+* Jakub Fojtík (responsible for ...)
 
-## Theoretical description and explanation
+## Teoretický popis a vysvětlení
 
 Enter a description of the problem and how to solve it.
 
-## Hardware description of demo application
+## Hardwareový popis
 
 Insert descriptive text and schematic(s) of your implementation.
 
-## Software description
+## Softwareový popis
 
 Put flowchats/state diagrams of your algorithm(s) and direct links to source/testbench files in `src` and `sim` folders. 
 
-### Component(s) simulation
+### Komponenty simulace
 
 Write descriptive text and simulation screenshots of your components.
 
-## Instructions
+## Pokyny
 
 Write an instruction manual for your application, including photos or a link to a video.
 
-## References
+## Zdroje
 
 1. Put here the literature references you used.
 2. ...
