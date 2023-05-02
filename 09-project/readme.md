@@ -2,31 +2,37 @@
 
 ### Členové týmu
 
-* David Bartoň (responsible for ...)
-* Šimon Bárta (responsible for ...)
-* Jakub Fojtík (responsible for ...)
+* David Bartoň (koncepce projektu; signalTransmitter.vhd)
+* Šimon Bárta (signalTransmitter.vhd; top.vhd; tb_MorseDecoder.vhd)
+* Jakub Fojtík (7seg_decoder.vhd; tb_MorseDecoder.vhd)
 
 ## Teoretický popis a vysvětlení
 
-Enter a description of the problem and how to solve it.
+Naším úkolem bylo vytvořit vysílač a přijímač Morseovy abecedy pomocí vývojové desky Nexys A7-50T v jazyce VHDL. Chtěli jsme použít jedno tlačítko, které by vysílalo 1 pro HIGH a 0 pro LOW pomocí časových intervalů dlouhých 250 ms. Jeden interval 250 ms by měl být tečka a mezera mezi nimi, 1000 ms by měla být čárka. Tyto znaky (tečka, čárka, mezera) se pak zapíší do pole 4 dvojčísel. Pole je pak dlouhé 8 bitů a každá dvojčíslice představuje znak: 00 = nic, 01 = tečka, 10 = čárka. Tato osmibitová čísla se pak použijí v našem příkazu case-when k rozsvícení správného písmene z abecedy na sedmisegmentovém displeji.
+
+
 
 ## Hardwareový popis
 
-Insert descriptive text and schematic(s) of your implementation.
+Po stisknutí prostředního tlačítka BTNC na desce Nexys A7-50T by měl být shift register v našem kódu schopen rozpoznat naše písmeno a zobrazit ho na sedmisegmentovém displeji. Bohužel se nám nepodařilo implementovat vstup na naši desku, takže nemůžeme písmena zobrazit.
 
 ## Softwareový popis
 
-Put flowchats/state diagrams of your algorithm(s) and direct links to source/testbench files in `src` and `sim` folders. 
+Náš software by měl být schopen zapamatovat si osmibitové číslo pomocí posuvných registrů v characterRecognizer.vhd a poté ho vypsat na sedmisegmentový displej.
+
+![Diagram](top_structure.jpg)
 
 ### Komponenty simulace
 
-Write descriptive text and simulation screenshots of your components.
+Nepodařilo se nám udělat fungující simulace. 
 
 ## Pokyny
 
-Write an instruction manual for your application, including photos or a link to a video.
+1. Mačkáním tlačítka se vysílá Morseův kód.
+2. Výstup Morseova kódu se nám zobrazí na sedmisegmentovém displeji. 
 
 ## Zdroje
 
-1. Put here the literature references you used.
-2. ...
+1. [Morse code translated to 7-segment display](https://fakoo.de/en/siekoo.html)
+2. [Better shift register than our first](https://www.instructables.com/Basys-3-Morse-Decoder/)
+3. [Idea of timing and using shift registers](https://www.researchgate.net/publication/305379385_Morse_code_decoder_design_in_VHDL_using_FPGA_Spartan_3E_development_kit) 
