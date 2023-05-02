@@ -20,7 +20,7 @@ Po stisknutí prostředního tlačítka BTNC na desce Nexys A7-50T by měl být 
 
 Náš software by měl být schopen zapamatovat si osmibitové číslo pomocí posuvných registrů v characterRecognizer.vhd a poté ho vypsat na sedmisegmentový displej.
 
-![Diagram](Diagram.PNG)
+![Diagram](Diagram.png)
 
 ### Komponenty simulace
 
